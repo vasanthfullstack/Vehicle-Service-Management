@@ -1,0 +1,256 @@
+.page {
+  max-width: 1200px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-header h1 {
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1557b0;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #475569;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+.table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background: #f8fafc;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.92rem;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+td .desc {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+td.price {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge.part {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge.repair_service {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge.in_progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.paid {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-sm.edit {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.btn-sm.edit:hover {
+  background: #bfdbfe;
+}
+
+.btn-sm.delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-sm.delete:hover {
+  background: #fecaca;
+}
+
+.btn-sm.view {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.btn-sm.view:hover {
+  background: #a7f3d0;
+}
+
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  padding: 40px !important;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #1e293b;
+}
+
+.modal form label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.modal form input,
+.modal form select,
+.modal form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  transition: border-color 0.2s;
+}
+
+.modal form input:focus,
+.modal form select:focus,
+.modal form textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  background: #fff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Toasts */
+.toast {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.toast.success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.toast.error {
+  background: #fee2e2;
+  color: #dc2626;
+}
